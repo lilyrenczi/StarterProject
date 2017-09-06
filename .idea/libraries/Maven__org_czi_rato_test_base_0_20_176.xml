@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.czi.rato:test-base:0.20.176">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/czi/rato/test-base/0.20.176/test-base-0.20.176.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/czi/rato/test-base/0.20.176/test-base-0.20.176-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/czi/rato/test-base/0.20.176/test-base-0.20.176-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

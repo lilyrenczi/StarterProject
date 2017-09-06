@@ -1,0 +1,4 @@
+the testing module is not for using testing,
+
+it is strictly for Service Testing, your unit tests need to be
+under service > src > test > package

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>service_example</artifactId>
+        <groupId>org.czi.kb.service_example</groupId>
+        <version>0.0.1-PROD</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>service</artifactId>
+
+    <build>
+        <finalName>${project.artifactId}-${project.parent.artifactId}-${project.parent.version}</finalName>
+        <plugins>
+            <!-- Spring Boot Build Shaded Jar -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring.boot.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                        <configuration>
+                            <classifier>exec</classifier>
+                        </configuration>
+                    </execution>
+                </executions>
+                <configuration>
+                    <excludes>
+                        <exclude>
+                            <groupId>ch.qos.logback</groupId>
+                            <artifactId>*</artifactId>
+                        </exclude>
+
+                        <exclude>
+                            <groupId>com.fasterxml*</groupId>
+                            <artifactId>*</artifactId>
+                        </exclude>
+
+                        <exclude>
+                            <groupId>org.czi.rato</groupId>
+                            <artifactId>*</artifactId>
+                        </exclude>
+
+                        <exclude>
+                            <groupId>com.google.guava</groupId>
+                            <artifactId>*</artifactId>
+                        </exclude>
+
+                        <exclude>
+                            <groupId>org.aopalliance*</groupId>
+                            <artifactId>*</artifactId>
+                        </exclude>
+
+                        <exclude>
+                            <groupId>org.yaml*</groupId>
+                            <artifactId>*</artifactId>
+                        </exclude>
+
+                        <exclude>
+                            <groupId>javax.cache*</groupId>
+                            <artifactId>*</artifactId>
+                        </exclude>
+
+                        <exclude>
+                            <groupId>com.h2database*</groupId>
+                            <artifactId>*</artifactId>
+                        </exclude>
+
+                        <exclude>
+                            <groupId>org.jetbrains*</groupId>
+                            <artifactId>*</artifactId>
+                        </exclude>
+
+                        <exclude>
+                            <groupId>org.objenesis*</groupId>
+                            <artifactId>*</artifactId>
+                        </exclude>
+
+                        <exclude>
+                            <groupId>io.github*</groupId>
+                            <artifactId>*</artifactId>
+                        </exclude>
+
+                        <exclude>
+                            <groupId>org.slf4j*</groupId>
+                            <artifactId>*</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
+
+            </plugin>
+
+        </plugins>
+    </build>
+
+
+</project>

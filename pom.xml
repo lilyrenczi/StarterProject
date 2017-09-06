@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>rato</artifactId>
+        <groupId>org.czi.rato</groupId>
+        <version>RELEASE</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.czi.kb.service_example</groupId>
+
+    <artifactId>service_example</artifactId>
+    <version>0.0.1-PROD</version>
+    <packaging>pom</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.czi.rato</groupId>
+            <artifactId>api</artifactId>
+            <version>0.20.139</version>
+        </dependency>
+        <dependency>
+            <groupId>org.czi.rato</groupId>
+            <artifactId>test-base</artifactId>
+            <version>0.20.139</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+
+  <modules>
+    <module>service</module>
+    <module>testing</module>
+  </modules>
+</project>
